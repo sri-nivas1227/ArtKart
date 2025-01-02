@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Delius } from "next/font/google";
+import NavBar from "./components/global/NavBar";
+
 import "./globals.css";
 
 const geistSans = localFont({
@@ -11,6 +14,11 @@ const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
+});
+const delius = Delius({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-delius",
 });
 
 export const metadata: Metadata = {
@@ -26,9 +34,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${delius.variable} font-delius antialiased bg-[#eed] h-screen`}
       >
-        {children}
+        <div className="flex flex-col h-full">
+          <NavBar />
+          <div className="p-1 flex-1 h-full">{children}</div>
+        </div>
       </body>
     </html>
   );
