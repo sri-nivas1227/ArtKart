@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { redirect } from "next/navigation";
 export default function NavBar() {
   return (
     <div className="flex-none sticky top-0 left-0 w-full bg-[#cef8e6] rounded-b-xl shadow-sm p-4">

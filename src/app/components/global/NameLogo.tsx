@@ -3,14 +3,14 @@ const NameLogo = ({
   onClick,
 }: {
   className: string;
-  onClick: () => void;
+  onClick?: () => void;
 }) => {
   // const handleClick = () => {
   //   onClick();
   // };
   return (
     <div
-      onClick={() => onClick()}
+      onClick={onClick}
       className={`${className} cursor-pointer font-waterlily`}
     >
       <span className="text-brand-pink">A</span>

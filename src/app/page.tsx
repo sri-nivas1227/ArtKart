@@ -10,35 +10,7 @@ import linkedinIcon from "@/app/assets/landing/linkedin.svg";
 import Link from "next/link";
 import ImageCarousel from "./components/global/ImageCarousel";
 export default function Home() {
-  const numbers = [
-    140, 160, 180, 200, 220, 240, 260, 280, 300, 320, 340, 360, 380, 400,
-  ];
-
-  const generateRandomPairs = (numbers: number[], numPairs: number) => {
-    const pairs = [];
-    const shuffledNumbers = shuffleArray([...numbers]); // Create a copy of the numbers array
-
-    for (let i = 0; i < numPairs; i++) {
-      const randomIndex1 = Math.floor(Math.random() * shuffledNumbers.length);
-
-      const randomIndex2 = Math.floor(Math.random() * shuffledNumbers.length);
-
-      pairs.push([
-        Math.max(shuffledNumbers[randomIndex1], shuffledNumbers[randomIndex2]),
-        Math.min(shuffledNumbers[randomIndex1], shuffledNumbers[randomIndex2]),
-      ]);
-    }
-    console.log(pairs);
-    return pairs;
-  };
-  function shuffleArray(array: number[]) {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-  }
-  const pairs = generateRandomPairs(numbers, Math.floor(Math.random() * 2) + 4);
+  
   return (
     <div className="p-5 w-full bg-brand-beige overflow-hidden">
       <div className="grid grid-cols-2 gap-2">
