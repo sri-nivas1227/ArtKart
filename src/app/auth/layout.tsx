@@ -10,7 +10,6 @@ import spiralFlower from "@/app/assets/auth/flower-1.svg";
 import thickFlower from "@/app/assets/auth/flower-2.svg";
 import pencils from "@/app/assets/auth/pencils.svg";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import NameLogo from "../components/global/NameLogo";
 
 const AuthLayout = ({
@@ -78,11 +77,7 @@ const AuthLayout = ({
       </div>
       <div className="grid grid-cols-3 h-full items-center">
         <div className="relative col-span-2">
-          <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            className=""
-          >
+          <div className="">
             <Image
               src={splashOrange}
               alt="splash"
@@ -90,14 +85,8 @@ const AuthLayout = ({
               height={300}
               className="absolute top-42 left-64 animate-jump-in"
             />
-          </motion.div>
-          <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            className=""
-          >
-            {children}
-          </motion.div>
+          </div>
+          <div className="">{children}</div>
         </div>
         <div className="relative flex flex-col items-stretch justify-between h-full">
           <Image
