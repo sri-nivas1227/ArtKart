@@ -1,0 +1,56 @@
+[
+  {
+    "image": "https://picsum.photos/250/350?random=4",
+    "artistName": "Michael Brown",
+    "artName": "Ocean Whispers",
+    "description": "A calming artwork of waves gently crashing on the shore."
+  },
+  {
+    "image": "https://picsum.photos/500/400?random=5",
+    "artistName": "Sophia Green",
+    "artName": "Mystic Forest",
+    "description": "A mystical view of a foggy forest at dawn."
+  },
+  {
+    "image": "https://picsum.photos/350/250?random=6",
+    "artistName": "Liam Wilson",
+    "artName": "Golden Hour",
+    "description": "A warm, golden-toned painting of a sunset over a hill."
+  },
+  {
+    "image": "https://picsum.photos/200/250?random=7",
+    "artistName": "Olivia Taylor",
+    "artName": "Silent Night",
+    "description": "A peaceful night scene under a star-filled sky."
+  },
+  {
+    "image": "https://picsum.photos/300/300?random=8",
+    "artistName": "Noah Johnson",
+    "artName": "Modern Chaos",
+    "description": "An eclectic mix of colors and patterns in a chaotic arrangement."
+  },
+  {
+    "image": "https://picsum.photos/400/200?random=9",
+    "artistName": "Isabella Davis",
+    "artName": "Pastel Dreams",
+    "description": "A pastel-themed artwork inspired by dreams and imagination."
+  },
+  {
+    "image": "https://picsum.photos/200/300?random=10",
+    "artistName": "Ethan Moore",
+    "artName": "Rustic Charm",
+    "description": "A rustic painting of an old barn in the countryside."
+  },
+  {
+    "image": "https://picsum.photos/300/500?random=11",
+    "artistName": "Charlotte Martinez",
+    "artName": "Cosmic Hues",
+    "description": "An artistic representation of galaxies and nebulae in vivid colors."
+  },
+  {
+    "image": "https://picsum.photos/250/400?random=12",
+    "artistName": "James Anderson",
+    "artName": "Ethereal Glow",
+    "description": "A luminous depiction of a moonlit sky over a serene lake."
+  }
+]

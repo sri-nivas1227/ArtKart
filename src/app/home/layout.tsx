@@ -4,7 +4,12 @@ const HomeLayout = ({
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
-  return <div>{children}</div>;
+  return (
+    <div className="flex flex-col h-full">
+      <NavBar />
+      <div className="p-1 flex-1 h-full">{children}</div>
+    </div>
+  );
 };
 
 export default HomeLayout;
