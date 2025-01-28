@@ -26,28 +26,28 @@ const AuthLayout = ({
           alt="splash"
           width={300}
           height={300}
-          className="absolute -left-14 animate-jump-in"
+          className="absolute -left-14 animate-pop-300"
         />
         <Image
           src={splashYellow}
           alt="splash"
           width={300}
           height={300}
-          className="absolute top-24  animate-jump-in"
+          className="absolute top-24  animate-pop-400"
         />
         <Image
           src={spiralFlower}
           alt="splash"
           width={200}
           height={200}
-          className="absolute bottom-48 -left-14 animate-jump-in"
+          className="absolute bottom-48 -left-14 animate-pop-600"
         />
         <Image
           src={pencils}
           alt="splash"
           width={240}
           height={240}
-          className="absolute -bottom-14 -left-20 animate-jump-in"
+          className="absolute -bottom-14 -left-20 animate-pop-600"
         />
         {/* </div> */}
         {/* <div className="relative col-span-2"> */}
@@ -56,22 +56,22 @@ const AuthLayout = ({
           alt="splash"
           width={400}
           height={400}
-          className="absolute -top-48 right-28 motion-preset-pop"
+          className="absolute -top-48 right-28 animate-pop-500"
         />
         <Image
           src={brush}
           alt="splash"
           width={400}
           height={400}
-          className="absolute -top-12 -right-48 hover:animate-jump-in"
+          className="absolute -top-12 -right-48 animate-pop-700"
         />
-        <NameLogo className="absolute -rotate-12 bottom-44 text-9xl right-0" />
+        <NameLogo className="absolute bottom-44 text-9xl right-0 animate-rotate-smooth" />
         <Image
           src={thickFlower}
           alt="splash"
           width={200}
           height={200}
-          className="absolute bottom-0 right-0  animate-jump-in"
+          className="absolute bottom-0 right-0  animate-pop-700"
         />
         {/* </div> */}
       </div>
@@ -83,10 +83,10 @@ const AuthLayout = ({
               alt="splash"
               width={300}
               height={300}
-              className="absolute top-42 left-64 animate-jump-in"
+              className="absolute top-42 left-64 animate-jump-800"
             />
           </div>
-          <div className="">{children}</div>
+          <div className="animate-pop-1200">{children}</div>
         </div>
         <div className="relative flex flex-col items-stretch justify-between h-full">
           <Image
@@ -94,14 +94,14 @@ const AuthLayout = ({
             alt="splash"
             width={200}
             height={200}
-            className=""
+            className="animate-pop-800"
           />
           <Image
             src={butterfly}
             alt="splash"
             width={200}
             height={200}
-            className="absolute bottom-0 right-0 hover:animate-bounce animate-jump-in"
+            className="absolute bottom-0 right-0 hover:animate-bounce animate-pop-800"
           />
         </div>
       </div>

@@ -5,9 +5,11 @@ const HomeLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <div className="flex flex-col h-full">
-      <NavBar />
-      <div className="p-1 flex-1 h-full">{children}</div>
+    <div className="bg-brand-beige flex flex-col h-full">
+      <div className="w-3/4 mx-auto ">
+        <NavBar />
+        <div className="p-1 flex-1 h-full bg-brand-beige">{children}</div>
+      </div>
     </div>
   );
 };

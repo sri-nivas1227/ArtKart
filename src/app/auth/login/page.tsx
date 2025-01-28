@@ -5,11 +5,17 @@ import hideIcon from "@/app/assets/hide.png";
 import rightWhite from "@/app/assets/right-white.png";
 import Image from "next/image";
 import axios from "axios";
+import { Toaster, toast } from "sonner";
+import { redirect } from "next/navigation";
 
 const Page = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const [error, setError] = useState<{
+    error: null | boolean;
+    message: string;
+  }>({ error: null, message: "" });
 
   const handleSubmit = () => {
     axios
@@ -19,13 +25,27 @@ const Page = () => {
       })
       .then((res) => {
         console.log(res.data);
+        localStorage.setItem("token", res.data.token);
+        setError((prev) => ({
+          ...prev,
+          error: false,
+          message: "Login successful",
+        }));
+        toast.success("Login successful");
+        redirect("/home");
       })
       .catch((err) => {
         console.log(err);
+        setError((prev) => ({
+          ...prev,
+          error: true,
+          message: "Login failed",
+        }));
       });
   };
   return (
     <div className="">
+      <Toaster position="top-center" />
       <div className="font-fingerPaint text-[#ff3131] text-6xl text-center m-6">
         Login
       </div>

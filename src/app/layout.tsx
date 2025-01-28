@@ -48,9 +48,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${delius.variable} ${fingerPaint.variable} ${waterLily.variable} ${itim.variable} font-delius antialiased bg-[#eed] h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} ${delius.variable} ${fingerPaint.variable} ${waterLily.variable} ${itim.variable} font-delius antialiased bg-brand-beige h-screen`}
       >
-        {/* <Image src={logo} alt="logo" className="hover:bg-red-50 hover:motion-preset-pop" /> */}
         {children}
       </body>
     </html>

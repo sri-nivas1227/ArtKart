@@ -43,11 +43,36 @@ const config: Config = {
         itim: ["var(--font-itim)"],
       },
       boxShadow: {
-        bubble:
-          " 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.04) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.02) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;",
-        base: "rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;",
         stripe:
           "box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;",
+      },
+      keyframes: {
+        pop: {
+          "0%": {
+            transform: "scale(0)",
+          },
+          "50%": {
+            transform: "scale(1.4)",
+          },
+          "100%": {
+            transform: "scale(1)",
+          },
+        },
+        rotateSmooth: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(-12deg)" },
+        },
+      },
+      animation: {
+        "pop-300": "pop 300ms ease-in-out",
+        "pop-400": "pop 400ms ease-in-out",
+        "pop-500": "pop 500ms ease-in-out",
+        "pop-600": "pop 600ms ease-in-out",
+        "pop-700": "pop 700ms ease-in-out",
+        "pop-800": "pop 800ms ease-in-out",
+        "pop-1000": "pop 1000ms ease-in-out",
+        "pop-1200": "pop 1200ms ease-in-out",
+        "rotate-smooth": "pop 1000ms rotateSmooth 0.5s ease-in-out ",
       },
     },
     plugins: [],
